@@ -9,15 +9,21 @@ Da jeg håber nogen kan bruge dem, bliver de nu delt her, og håber i tager godt
 
 Dog skal det siges, at jeg som sagt ikke har haft dem alle afprøvet på en officiel server med mange spillere, og derfor sætter jeg stor pris på beskeder med eventuelle fejl, mangler og lignende. 
 
+### Discord: https://discord.gg/uPQfJuu
+
+<a href="https://discord.gg/uPQfJuu"><img src="https://kasper-rasmussen.dk/assets/images/icons/discord_logo.png" /></a>
+
 ## Projekter:
 
 ![alt text](https://kasper-rasmussen.dk/assets/images/icons/info_16x16.png "Waiting") kasperr_base - kommende udgivelse (under udvikling)
+
+![alt text](https://kasper-rasmussen.dk/assets/images/icons/info_16x16.png "Waiting") kasperr_helpdesk - kommende udgivelse (under udvikling)
 
 ![alt text](https://kasper-rasmussen.dk/assets/images/icons/check_16x16.png "Completed") kasperr_carjack_alert
 
 ![alt text](https://kasper-rasmussen.dk/assets/images/icons/check_16x16.png "Completed") kasperr_info_menu [(video)](https://youtu.be/wizzv1FT7Tk "Info menu - video")
 
-![alt text](https://kasper-rasmussen.dk/assets/images/icons/check_16x16.png "Completed") kasperr_inventory [(video)](https://youtu.be/loLkBvHa110 "Inventory - video")
+![alt text](https://kasper-rasmussen.dk/assets/images/icons/check_16x16.png "Completed") kasperr_inventory [(video)](https://youtu.be/loLkBvHa110 "Inventory - video") *- kasperr_progress_handler er påkrævet*
 
 ![alt text](https://kasper-rasmussen.dk/assets/images/icons/check_16x16.png "Completed") kasperr_jobcenter [(video)](https://youtu.be/CjaqFxzWaTM "Jobcenter - video")
 
