@@ -45,7 +45,7 @@ RegisterCommand(
 				TriggerServerEvent("kasperr_player_ping:askPlayer", tonumber(args[1]))
 				TriggerEvent('chatMessage', '', {255, 82, 82}, "Pinging " .. args[1])
 			else
-				TriggerEvent('chatMessage', '', {255, 82, 82}, "To manu requests")
+				TriggerEvent('chatMessage', '', {255, 82, 82}, "To many requests")
 			end
 		end
 		if args[1] == "accept" then
