@@ -15,9 +15,15 @@ Dog skal det siges, at jeg som sagt ikke har haft dem alle afprøvet på en offi
 
 ## Projekter:
 
+![alt text](https://kasper-rasmussen.dk/assets/images/icons/info_16x16.png "Waiting") kasperr_phone - kommende udgivelse (under udvikling)
+
 ![alt text](https://kasper-rasmussen.dk/assets/images/icons/info_16x16.png "Waiting") kasperr_base - kommende udgivelse (under udvikling)
 
-![alt text](https://kasper-rasmussen.dk/assets/images/icons/info_16x16.png "Waiting") kasperr_helpdesk - kommende udgivelse (under udvikling)
+![alt text](https://kasper-rasmussen.dk/assets/images/icons/check_16x16.png "Completed") kasperr_bank [NYT]
+
+![alt text](https://kasper-rasmussen.dk/assets/images/icons/check_16x16.png "Completed") kasperr_helpdesk [NYT]
+
+![alt text](https://kasper-rasmussen.dk/assets/images/icons/check_16x16.png "Completed") kasperr_player_ping
 
 ![alt text](https://kasper-rasmussen.dk/assets/images/icons/check_16x16.png "Completed") kasperr_carjack_alert
 
@@ -34,8 +40,6 @@ Dog skal det siges, at jeg som sagt ikke har haft dem alle afprøvet på en offi
 ![alt text](https://kasper-rasmussen.dk/assets/images/icons/check_16x16.png "Completed") kasperr_progress_handler
 
 ![alt text](https://kasper-rasmussen.dk/assets/images/icons/check_16x16.png "Completed") kasperr_richpresence
-
-![alt text](https://kasper-rasmussen.dk/assets/images/icons/check_16x16.png "Completed") kasperr_player_ping [NYT]
 
 ## Dokumentation:
 

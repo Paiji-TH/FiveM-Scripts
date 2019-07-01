@@ -1,0 +1,282 @@
+/*
+  __  __           _            _                 _  __                         _____  
+ |  \/  |         | |          | |               | |/ /                        |  __ \ 
+ | \  / | __ _  __| | ___      | |__  _   _      | ' / __ _ ___ _ __   ___ _ __| |__) |
+ | |\/| |/ _` |/ _` |/ _ \     | '_ \| | | |     |  < / _` / __| '_ \ / _ \ '__|  _  / 
+ | |  | | (_| | (_| |  __/     | |_) | |_| |     | . \ (_| \__ \ |_) |  __/ |  | | \ \ 
+ |_|  |_|\__,_|\__,_|\___|     |_.__/ \__, |     |_|\_\__,_|___/ .__/ \___|_|  |_|  \_\
+                                       __/ |                   | |                     
+                                      |___/                    |_|                     
+
+  Author: Kasper Rasmussen
+  Steam: https://steamcommunity.com/id/kasperrasmussen
+*/
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html {
+  overflow: hidden;
+  font-family: monospace;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.full-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  width: 700px;
+  height: 500px;
+  color: #000000;
+  background-color: #ecf0f1;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 2px solid #d8d8d8;
+  display: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.primary-button {
+  border: none;
+  outline: none;
+  background-color: #288f3a;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+
+.primary-button:hover {
+  background-color: #21772f;
+  color: #ffffff;
+  cursor: pointer;
+  -moz-box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 5px #999;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  height: 70px;
+  border-bottom: 2px solid #d8d8d8;
+}
+
+.header p {
+  margin: 0;
+  padding: 0;
+  height: 70px;
+  line-height: 70px;
+  color: #858585;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.header div:first-child {
+  width: 50%;
+}
+
+.header div:last-child {
+  width: 50%;
+}
+
+/* MAIN */
+
+.main {
+  width: 100%;
+  height: 310px;
+  border-bottom: 2px solid #d8d8d8;
+  padding: 20px 0 20px 0;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.footer button {
+  float: right;
+  margin-left: 20px;
+}
+
+/* HOME */
+
+.home {
+  display: none;
+}
+
+.home button {
+  font-size: 18px;
+}
+
+.home button:nth-child(1), .home button:nth-child(3) {
+  width: 340px;
+  margin-right: 10px;
+  height: 150px;
+}
+
+.home button:nth-child(2), .home button:nth-child(4) {
+  width: 340px;
+  margin-left: 10px;
+  height: 150px;
+}
+
+.home button:nth-child(1), .home button:nth-child(2) {
+  margin-bottom: 5px;
+}
+
+.home button:nth-child(3), .home button:nth-child(4) {
+  margin-top: 5px;
+}
+
+/* DEPOSIT, WITHDRAW & transfer */
+
+.deposit, .withdraw, .transfer {
+  display: none;
+}
+
+.deposit .flex div, .withdraw .flex div, .transfer .flex div {
+  width: 340;
+}
+
+.deposit .flex div h3, .withdraw .flex div h3, .transfer .flex div h3 {
+  font-weight: normal;
+  margin: 0 0 10px 0;
+}
+
+.deposit .flex div:nth-child(1), .withdraw .flex div:nth-child(1), .transfer .flex div:nth-child(1) {
+  margin-right: 10px;
+}
+
+.deposit .flex div:nth-child(2), .withdraw .flex div:nth-child(2), .transfer .flex div:nth-child(2) {
+  margin-left: 10px;
+}
+
+.deposit input, .withdraw input, .transfer input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #d8d8d8;
+  color: #000000;
+}
+
+.deposit button, .withdraw button, .transfer button {
+  width: 100%;
+}
+
+.deposit button:hover, .withdraw button:hover, .transfer button:hover {
+  -moz-box-shadow: 0 0 5px #21772f;
+  -webkit-box-shadow: 0 0 5px #21772f;
+  box-shadow: 0 0 5px #21772f;
+}
+
+/* BALANCE */
+
+.balance {
+  display: none;
+}
+
+.balance input:disabled {
+  width: 700px;
+  height: 56px;
+  line-height: 56px;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #d8d8d8;
+  color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* Loadingscreen */
+
+#loadingscreen {
+  display: none;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #288f3a;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #288f3a transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

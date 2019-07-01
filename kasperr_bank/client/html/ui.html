@@ -1,0 +1,115 @@
+<!-- 
+  __  __           _            _                 _  __                         _____  
+ |  \/  |         | |          | |               | |/ /                        |  __ \ 
+ | \  / | __ _  __| | ___      | |__  _   _      | ' / __ _ ___ _ __   ___ _ __| |__) |
+ | |\/| |/ _` |/ _` |/ _ \     | '_ \| | | |     |  < / _` / __| '_ \ / _ \ '__|  _  / 
+ | |  | | (_| | (_| |  __/     | |_) | |_| |     | . \ (_| \__ \ |_) |  __/ |  | | \ \ 
+ |_|  |_|\__,_|\__,_|\___|     |_.__/ \__, |     |_|\_\__,_|___/ .__/ \___|_|  |_|  \_\
+                                       __/ |                   | |                     
+                                      |___/                    |_|                     
+
+  Author: Kasper Rasmussen
+  Steam: https://steamcommunity.com/id/kasperrasmussen
+-->
+
+<head>
+	<!-- <script src="nui://game/ui/jquery.js" type="text/javascript"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts.js" type="text/javascript"></script>
+	<script src="debounce.min.js" type="text/javascript"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<script src="sweetalert2.all.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="full-screen">
+		<div class="container">
+			<div class="header flex">
+				<div>
+					<img class="logo" src="assets/logo.png" width="auto" height="50px">
+				</div>
+				<div>
+					<p class="showName"></p>
+				</div>
+			</div>
+			<div class="main">
+				<div class="home">
+					<div class="flex">
+						<button class="primary-button" onclick="openDeposit()">Deposit</button>
+						<button class="primary-button" onclick="openWithdraw()">Withdraw</button>
+						<button class="primary-button" onclick="openTransfer()">Transfer</button>
+						<button class="primary-button" onclick="openBalance()">Balance</button>
+					</div>
+				</div>
+				<div class="deposit">
+					<div class="flex">
+						<div>
+							<h3>Quick deposit</h3>
+							<button class="primary-button" onclick="depositMoney(500)">$500</button>
+							<button class="primary-button" onclick="depositMoney(1000)">$1000</button>
+							<button class="primary-button" onclick="depositMoney(5000)">$5000</button>
+							<button class="primary-button" onclick="depositMoney(10000)">$10000</button>
+							<button class="primary-button" onclick="depositMoney(25000)">$25000</button>
+						</div>
+						<div>
+							<h3>Deposit</h3>
+							<input type="number" class="deposit-input" placeholder="Amount...">
+							<button class="primary-button"
+								onclick="depositMoney($('.deposit-input').val())">Confirm</button>
+						</div>
+					</div>
+				</div>
+				<div class="withdraw">
+					<div class="flex">
+						<div>
+							<h3>Quick withdraw</h3>
+							<button class="primary-button" onclick="withdrawMoney(500)">$500</button>
+							<button class="primary-button" onclick="withdrawMoney(1000)">$1000</button>
+							<button class="primary-button" onclick="withdrawMoney(5000)">$5000</button>
+							<button class="primary-button" onclick="withdrawMoney(10000)">$10000</button>
+							<button class="primary-button" onclick="withdrawMoney(25000)">$25000</button>
+						</div>
+						<div>
+							<h3>Withdraw</h3>
+							<input type="number" class="withdraw-input" placeholder="Amount...">
+							<button class="primary-button"
+								onclick="withdrawMoney($('.withdraw-input').val())">Confirm</button>
+						</div>
+					</div>
+				</div>
+				<div class="balance">
+					<input type="text" class="balance-input" placeholder="" disabled>
+				</div>
+				<div class="transfer">
+					<div class="flex">
+						<div>
+							<h3>Receiver ID</h3>
+							<input type="number" class="receiver-id-input" placeholder="Receiver ID...">
+						</div>
+						<div>
+							<h3>Transfer amount</h3>
+							<input type="number" class="transfer-amount-input" placeholder="Amount...">
+							<button class="primary-button"
+								onclick="transferMoney($('.receiver-id-input').val(), $('.transfer-amount-input').val())">Confirm</button>
+						</div>
+					</div>
+				</div>
+				<div id="loadingscreen">
+					<div class="lds-ring">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<button class="primary-button" onclick="closeNUI()">Close</button>
+				<button class="back primary-button" onclick="openHome()">Back</button>
+			</div>
+		</div>
+	</div>
+</body>
