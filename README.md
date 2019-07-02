@@ -1,8 +1,5 @@
 # FiveM Scripts - vRP
 
-![alt text](https://kasper-rasmussen.dk/assets/images/banner_low.png "Logo")
-
-
 Disse projekter har været under udvikling i et stykke tid, og et par stykker har været afprøvet på serveren DanDream, som jeg har valgt at forlade. 
 
 Da jeg håber nogen kan bruge dem, bliver de nu delt her, og håber i tager godt imod dem. 
