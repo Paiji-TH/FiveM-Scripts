@@ -107,7 +107,7 @@ Citizen.CreateThread(
 function IsNearATM()
   local ply = GetPlayerPed(-1)
   local plyCoords = GetEntityCoords(ply, 0)
-  for _, item in pairs(Config.Banks) do
+  for _, item in pairs(Config.Atms) do
     local distance =
       GetDistanceBetweenCoords(item.x, item.y, item.z, plyCoords["x"], plyCoords["y"], plyCoords["z"], true)
     if (distance <= 3) then
