@@ -72,8 +72,6 @@ TriggerClientEvent("kasperr_progress_handler:open", "My title", 5000, "client", 
 
 Vigtig: man må gerne redigere i mine scripts, men IKKE fjerne mit navn eller "credits". Det betyder også, at man ikke må fjerne mit navn fra mapperne.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## Kontakt 
 
 Steam: https://steamcommunity.com/id/kasperrasmussen/
