@@ -22,11 +22,18 @@ RegisterServerEvent('kasperr_richpresence:getPlayerInfo')
 AddEventHandler('kasperr_richpresence:getPlayerInfo', function()
     local _source = source
     local user_id = vRP.getUserId({source})
+
+    local users = vRP.getUsers()
+    local userCounter = 0
+    for k, v in pairs(users) do
+      userCounter = userCounter + 1
+    end
+
     vRP.getUserIdentity({user_id, function(identity)
         if identity then
-            TriggerClientEvent("kasperr_richpresence:setRichPresence", _source, identity.firstname, identity.name, user_id)
+            TriggerClientEvent("kasperr_richpresence:setRichPresence", _source, identity.firstname, identity.name, user_id, userCounter)
         else
-            TriggerClientEvent("kasperr_richpresence:setRichPresence", _source, false, false, false)
+            TriggerClientEvent("kasperr_richpresence:setRichPresence", _source, false, false, false, userCounter)
         end
     end})
 end)

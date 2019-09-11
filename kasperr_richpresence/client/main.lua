@@ -20,13 +20,13 @@ Citizen.CreateThread(function()
 end)
 
 RegisterNetEvent("kasperr_richpresence:setRichPresence")
-AddEventHandler("kasperr_richpresence:setRichPresence", function(firstname, lastname, user_id)
+AddEventHandler("kasperr_richpresence:setRichPresence", function(firstname, lastname, user_id, userCount)
     SetDiscordAppId(Config.DiscordAppID)
     SetDiscordRichPresenceAsset(Config.DiscordRichPresenceAssetName)
     SetDiscordRichPresenceAssetText(Config.Title)
     SetDiscordRichPresenceAssetSmall(Config.DiscordRichPresenceAssetName)
     SetDiscordRichPresenceAssetSmallText('')
-    local users = NetworkGetNumConnectedPlayers().. "/" .. Config.MaxClients
+    local users = userCount .. "/" .. Config.MaxClients
     if firstname ~= false and lastname ~= false and user_id ~= false then 
         local string = ""
         if Config.ShowCharacterFullName == true then 

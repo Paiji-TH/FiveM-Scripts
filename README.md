@@ -71,6 +71,10 @@ TriggerClientEvent("kasperr_progress_handler:open", "My title", 5000, "client", 
 ## Retningslinjer
 
 Vigtig: man må gerne redigere i mine scripts, men IKKE fjerne mit navn eller "credits". Det betyder også, at man ikke må fjerne mit navn fra mapperne.
+Hvis man gør brug af følgende udgivelser, skal man nævne udgiveren (Kasper Rasmussen) ved alle forhåndsvisninger (videoer, billeder eller andet materiale som udgives til spillere/brugere). 
+Man må benytte og redigere udgivelserne, men aldrig videregive dem, sælge eller udgive sig for at være udgiveren.
+
+Hvis man er i tvivl om retningslinjerne eller har spørgsmål, skal man kontakt Kasper Rasmussen - find kontaktoplysninger i bunden af siden eller på https://www.kasper-rasmussen.dk/
 
 ## Kontakt 
 
