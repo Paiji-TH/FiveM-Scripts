@@ -1,10 +1,10 @@
-# FiveM Scripts - vRP
+สคริปต์ FiveM - vRP เครดิต kasper
 
-Disse projekter har været under udvikling i et stykke tid, og et par stykker har været afprøvet på serveren DanDream, som jeg har valgt at forlade. 
+ โครงการเหล่านี้อยู่ในระหว่างการพัฒนาชั่วขณะหนึ่งและอีกไม่กี่โครงการได้รับการทดสอบบนเซิร์ฟเวอร์ DanDream ซึ่งฉันได้เลือกที่จะออก
 
-Da jeg håber nogen kan bruge dem, bliver de nu delt her, og håber i tager godt imod dem. 
+ เนื่องจากฉันหวังว่าใครบางคนสามารถใช้พวกเขาตอนนี้พวกเขาแชร์ที่นี่และหวังว่าคุณจะต้อนรับพวกเขา
 
-Dog skal det siges, at jeg som sagt ikke har haft dem alle afprøvet på en officiel server med mange spillere, og derfor sætter jeg stor pris på beskeder med eventuelle fejl, mangler og lignende. 
+ อย่างไรก็ตามอย่างที่ฉันบอกว่าฉันไม่ได้ทดสอบพวกเขาทั้งหมดบนเซิร์ฟเวอร์อย่างเป็นทางการกับผู้เล่นหลายคนและดังนั้นฉันจึงชื่นชมข้อความที่มีข้อผิดพลาดข้อบกพร่องและสิ่งที่คล้าย ๆ
 
 ### Discord: https://discord.gg/uPQfJuu
 
